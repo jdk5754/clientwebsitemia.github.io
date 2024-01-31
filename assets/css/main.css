@@ -8247,6 +8247,39 @@ input, select, textarea {
 		border-top-color: rgba(0, 0, 0, 0.2);
 	}
 
+/* Header */
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center items vertically */
+    padding: 45px 10% 10px; /* Adjust padding as needed */
+    border: 1px solid rgb(229, 229, 229);
+    height: 65px; /* Adjust height as needed */
+	background-color: #f8f8f8;
+}
+
+/* Navigation bar styles */
+.nav__links {
+    list-style: none;
+    display: flex; /* Use flexbox to align items horizontally */
+}
+
+.nav__links li {
+    margin-right: 30px; /* Adjust spacing between nav items */
+}
+
+.nav__links li a {
+    text-decoration: none;
+    color: #000000;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav__links li a:hover {
+    color: #26a5be;
+}
+
 /* Wrapper */
 
 	#wrapper {
