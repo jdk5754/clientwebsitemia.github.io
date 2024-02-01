@@ -8297,6 +8297,18 @@ header {
 }
 
 
+/* Footer */
+footer {
+    padding: 10px; /* Adjust the padding as needed */
+    font-size: 14px; /* Adjust the font size as needed */
+}
+
+/* You can also adjust the inner container within the footer if needed */
+footer .inner {
+    max-width: 800px; /* Set a maximum width to limit the width of the inner container */
+    margin: 0 auto; /* Center the inner container */
+}
+
 /* Wrapper */
 
 	#wrapper {
