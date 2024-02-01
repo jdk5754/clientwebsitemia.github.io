@@ -8280,6 +8280,23 @@ header {
     color: #26a5be;
 }
 
+/* Download Buttons */
+.resume-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.resume-actions li {
+    margin-right: 10px;
+}
+
+.resume-actions li:last-child {
+    margin-right: 0; /* Remove margin from the last button to avoid extra spacing */
+}
+
+
 /* Wrapper */
 
 	#wrapper {
