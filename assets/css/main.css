@@ -8298,10 +8298,10 @@ header {
 
 
 /* Footer */
-footer {
+footer.wrapper.style1.align-center {
     display: flex;
-    justify-content: center; /* Center the content horizontally */
-    align-items: center; /* Center items vertically */
+    justify-content: center;
+    align-items: center;
     padding: 10px 10%; /* Adjust padding as needed */
     height: 65px; /* Adjust height as needed */
     background-color: #f8f8f8; /* Match the color in the header */
@@ -8309,11 +8309,10 @@ footer {
 }
 
 /* Style the inner container within the footer */
-footer .inner {
+footer.wrapper.style1.align-center .inner {
     max-width: 800px; /* Set a maximum width to limit the width of the inner container */
     margin: 0 auto; /* Center the inner container */
 }
-
 /* Wrapper */
 
 	#wrapper {
