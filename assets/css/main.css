@@ -8298,6 +8298,12 @@ header {
 
 
 /* Footer */
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
 footer.wrapper.style1.align-center {
     display: flex;
     justify-content: center;
