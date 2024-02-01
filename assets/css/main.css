@@ -8304,6 +8304,11 @@ body, html {
     padding: 0;
 }
 
+/* Style for the spacer element */
+.spacer {
+    height: 65px; /* Adjust the height to match the footer's height */
+}
+
 footer.wrapper.style1.align-center {
     display: flex;
     justify-content: center;
