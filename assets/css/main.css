@@ -8318,6 +8318,16 @@ header {
     }
 }
 
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 768px) {
+    .image img {
+        max-width: 100%; /* Set the maximum width to 100% for smaller screens */
+        width: auto; /* Allow the image to scale down proportionally */
+    }
+}
+
+
 /* Download Buttons */
 .resume-actions {
     display: flex;
