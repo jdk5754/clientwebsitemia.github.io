@@ -8253,8 +8253,8 @@ input, select, textarea {
 		border-top-color: rgba(0, 0, 0, 0.2);
 	}
 
-/* Header styles */
-header {
+/* Default styles for larger screens */
+.header {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8264,7 +8264,6 @@ header {
 	background-color: #f8f8f8;
 }
 
-/* Navigation bar styles */
 .nav__links {
     list-style: none;
     display: flex;
@@ -8286,44 +8285,23 @@ header {
 
 /* Responsive styles for smaller screens */
 @media screen and (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
+    .header {
+        display: none; /* Hide the entire header on mobile screens */
     }
 
     .nav {
         display: none; /* Hide the navigation on mobile screens */
     }
 
-    .nav__links {
-        flex-direction: column;
-    }
-
-    .nav__links li {
-        margin: 10px 0;
-        margin-right: 0; /* Remove right margin for vertical spacing */
-    }
-
-    .mobile-menu-icon {
-        cursor: pointer;
-        display: block;
-    }
-
-    .bar {
-        display: block;
-        width: 25px;
-        height: 3px;
-        background-color: #333;
-        margin: 5px 0;
-    }
-}
-
-
-/* Responsive styles for smaller screens */
-@media screen and (max-width: 768px) {
     .image img {
         max-width: 100%; /* Set the maximum width to 100% for smaller screens */
         width: auto; /* Allow the image to scale down proportionally */
+        border: 1px solid #000;
+        border-radius: 3px;
+    }
+
+    .resume-actions {
+        margin-top: 20px; /* Adjust margin for spacing */
     }
 }
 
