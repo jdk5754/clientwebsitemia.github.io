@@ -8291,6 +8291,10 @@ header {
         align-items: flex-start;
     }
 
+    .nav {
+        display: none; /* Hide the navigation on mobile screens */
+    }
+
     .nav__links {
         flex-direction: column;
     }
