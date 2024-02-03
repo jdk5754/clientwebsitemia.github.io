@@ -72,6 +72,12 @@ input, select, textarea {
 	appearance: none;
 }
 
+/* Paragraph */
+.paragraph {
+    margin-bottom: 1em; /* You can adjust the value to control the space between paragraphs */
+}
+
+
 /* Basic */
 
 	@-ms-viewport {
