@@ -8322,34 +8322,6 @@ input, select, textarea {
     margin-right: 0; /* Remove margin from the last button to avoid extra spacing */
 }
 
-
-/* Footer */
-
-body, html {
-    margin: 0;
-    padding: 0;
-}
-
-/* Style for the spacer element */
-.spacer {
-    height: 65px; /* Adjust the height to match the footer's height */
-}
-
-footer.wrapper.style1.align-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 10%; /* Adjust padding as needed */
-    height: 65px; /* Adjust height as needed */
-    background-color: #f8f8f8; /* Match the color in the header */
-    border-top: 1px solid rgb(229, 229, 229); /* Add a top border similar to the header */
-}
-
-/* Style the inner container within the footer */
-footer.wrapper.style1.align-center .inner {
-    max-width: 800px; /* Set a maximum width to limit the width of the inner container */
-    margin: 0 auto; /* Center the inner container */
-}
 /* Wrapper */
 
 	#wrapper {
