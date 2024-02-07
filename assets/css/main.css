@@ -8180,6 +8180,7 @@ input, select, textarea {
 			border-color: rgba(0, 0, 0, 0.2);
 		}
 
+
 /* Index */
 
 	.index > * {
@@ -8253,6 +8254,7 @@ input, select, textarea {
 		border-top-color: rgba(0, 0, 0, 0.2);
 	}
 
+	
 /* Default styles for larger screens */
 .header {
     display: flex;
