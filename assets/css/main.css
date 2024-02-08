@@ -8255,15 +8255,15 @@ input, select, textarea {
 	}
 
 	
-/* Default styles for larger screens */
+/* nav Navigation bar */
 .header {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 45px 10% 10px;
-    border: 1px solid rgb(229, 229, 229);
+    border: 1px solid rgb(161, 161, 161);
     height: 65px;
-	background-color: #f8f8f8;
+	background-color: rgba(255, 0, 0, 0.5); /* Opaque dark red color */
 }
 
 .nav__links {
@@ -8272,12 +8272,27 @@ input, select, textarea {
 }
 
 .nav__links li {
-    margin-right: 30px;
+    margin-right: 90px; /* Increase space between items */
+}
+
+.nav__links li:last-child {
+    margin-right: 0; /* Remove margin from the last item */
+}
+
+.nav__links li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 80%; /* Adjust height of the line */
+    background-color: #ffffff; /* Line color */
 }
 
 .nav__links li a {
     text-decoration: none;
-    color: #000000;
+    color: #000000; /* Change link color to white */
     transition: color 0.3s ease-in-out;
 }
 
@@ -8306,7 +8321,6 @@ input, select, textarea {
         margin-top: 20px; /* Adjust margin for spacing */
     }
 }
-
 
 /* Download Buttons */
 .resume-actions {
