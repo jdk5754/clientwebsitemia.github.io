@@ -8263,7 +8263,7 @@ input, select, textarea {
     padding: 45px 10% 10px;
     border: 1px solid rgb(161, 161, 161);
     height: 65px;
-	background-color: rgba(255, 0, 0, 0.5); /* Opaque dark red color */
+	background-color: rgb(255, 255, 255); /* Opaque dark red color */
 }
 
 .nav__links {
@@ -8272,7 +8272,7 @@ input, select, textarea {
 }
 
 .nav__links li {
-    margin-right: 90px; /* Increase space between items */
+    margin-right: 50px; /* Increase space between items */
 }
 
 .nav__links li:last-child {
@@ -8300,6 +8300,19 @@ input, select, textarea {
     color: #26a5be;
 }
 
+/* Update font family and weight for nav bar items */
+.nav__links li a {
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat font */
+    font-weight: 300; /* Set font weight to thin (100) */
+    font-size: 12px; /* Adjust the font size as needed */
+}
+
+/* Update font size for Instagram link */
+.instagram-link .fa-instagram {
+    font-size: 0.625em !important; /* Make the icon smaller */
+}
+
+
 /* Responsive styles for smaller screens */
 @media screen and (max-width: 768px) {
     .header {
@@ -8320,6 +8333,46 @@ input, select, textarea {
     .resume-actions {
         margin-top: 20px; /* Adjust margin for spacing */
     }
+}
+
+
+/* CSS to position Instagram link and fix white line */
+.instagram-link {
+    position: absolute;
+	top: 50px; /* Adjust top position as needed */
+    right: 50px; /* Adjust right position as needed */
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    position: relative; /* Ensure positioning context for absolute positioning */
+}
+
+.instagram-link .fa-instagram {
+    font-size: 1.25em !important; /* Make the icon half the size */
+}
+
+.nav__links li:not(:last-child)::after {
+    background-color: transparent; /* Set the line color to transparent */
+}
+
+
+/* Logo styling */
+.logo {
+    font-family: 'Fjalla One', sans-serif; /* Use Fjalla One font */
+    font-size: 25px; /* Adjust the font size as needed */
+    color: #000000; /* Set the color to white or your desired color */
+    padding: 10px 20px; /* Adjust padding as needed */
+	left: 50px; /* Adjust left position as needed */
+}
+
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 20px; /* Adjust left position as needed */
+    transform: translateY(-50%);
 }
 
 /* Download Buttons */
