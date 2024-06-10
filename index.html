@@ -61,19 +61,23 @@
 					overflow-y: hidden !important; /* Ensure no vertical scroll bar in the navigation */
 				}
 
-				/* New white banner section */
-				.white-banner {
-					background-color: #e5e0df;
-					padding: 400px 0;
-					text-align: center;
+				.blank-banner {
+						background-color: #e5e0df; /* Set background color */
+						height: 800px;
+						padding: 315px 0; /* Set the height of the banner */
+						/* Add any other styles such as margins, padding, etc. */
+					}
+
+				/* Content inside blank banner section */
+				.blank-banner .content {
+					position: absolute;
+					width: 100%;
+					height: 100%;
+					display: flex;
+					justify-content: center; /* Center content horizontally */
+					align-items: center; /* Center content vertically */
 				}
 
-				.white-banner h2 {
-					margin: 0;
-					font-family: 'Fjalla One', sans-serif; /* Use Fjalla One font */
-					font-size: 50px; /* Set the font size */
-					color: #000000; /* Set the font color */
-				}
 
 				/* Banner Picture */
 				.bannerpic {
@@ -115,6 +119,18 @@
 					color: #ffffff;
 					white-space: nowrap;
 				}
+
+				.vertical-title-right-black {
+					position: absolute;
+					right: 200px;
+					top: -15%;
+					transform: rotate(90deg) translateX(50%);
+					transform-origin: right top;
+					font-family: 'Fjalla One', sans-serif;
+					font-size: 60px;
+					color: #000000;
+					white-space: nowrap;
+				}
 				/* Content inside bannerpic section */
 				.contentpic {
 					position: absolute;
@@ -142,6 +158,28 @@
 					background-color: rgba(255, 255, 255, 0.5); /* Translucent white background color */
 					border: 5px solid #ffffff; /* Black border around the square */
 					opacity: 0.8; /* Adjust the opacity of the square */
+				}
+
+				.resume-image {
+					text-align: right;
+					margin-top: -275px; /* Add top margin for spacing */
+					margin-right: 22.5%; /* Adjust right margin as needed */
+				}
+
+				.resume-image img {
+					max-width: calc(100% - 20px); /* Adjust the width to fit within the container */
+
+				}
+
+				.headshot {
+					text-align: right;
+					margin-top: -600px; /* Add top margin for spacing */
+					margin-right: 60%; /* Adjust right margin as needed */
+				}
+
+				.headshot {
+					max-width: calc(100% - 20px); /* Adjust the width to fit within the container */
+
 				}
 
 			</style>
@@ -183,10 +221,14 @@
 					</div>
 				</section>
 
-				<!-- New white banner -->
-				<section class="white-banner" id="shows">
+				<!-- Two -->		 
+				<section class="blank-banner">
+					<div class="content">
+						<div class="vertical-title-right-black">UPCOMING</div>
+					</div>
+
 				</section>
-				
+
 				<!-- Banner pic -->
 				<section class="bannerpic" id="about-me">
 					<img src="https://imagedelivery.net/BLeIp_8WYs9yHwxaCXjRYQ/d1ebffee-4318-4aed-5872-6cadb2be3800/fullscreen" alt="Banner Image">
@@ -199,27 +241,27 @@
 					</div>
 				</section>
 
-
-				<!-- Five -->
-				<section class="wrapper style1 align-center" id="resume">
-					<div class="inner">
-						<h2>RESUME</h2>
-						<div class="items style1 medium">
-							<!-- Your resume content goes here -->
-						</div>
-						<div class="image" style="text-align: center; margin-top: 20px;">
-							<img src="https://imagedelivery.net/BLeIp_8WYs9yHwxaCXjRYQ/5626898f-4cc8-4a20-749d-29045e5ee000/public" alt="" style="max-width: 500px; border: 1px solid #000; border-radius: 3px;" />
-						</div>
-						<ul class="actions resume-actions">
-							<li><a href="/resume/re.pdf" download class="button icon solid fa-download">DOWNLOAD RESUME</a></li>
-							<li><a href="/images/headshot/headshot.jpg" download class="button icon solid fa-download">DOWNLOAD HEADSHOT</a></li>
-						</ul>
+				<!-- Resume -->		 
+				<section class="blank-banner" id="resume">
+					<div class="content">
+						<div class="vertical-title-right-black">RESUME</div>
 					</div>
+					<div class="resume-image">
+						<img src="https://imagedelivery.net/BLeIp_8WYs9yHwxaCXjRYQ/5626898f-4cc8-4a20-749d-29045e5ee000/public" alt="Resume" style="max-width: 500px;;">
+					</div>
+					<div class="headshot">
+						<img src="https://imagedelivery.net/BLeIp_8WYs9yHwxaCXjRYQ/48f3df80-3c59-46b0-eacc-46558fa54f00/public" alt="" style="max-width: 350px;">
+					</div>
+					<ul class="actions resume-actions">
+						<li><a href="/images/headshot/headshot.jpg" download class="button icon solid fa-download" style="margin-left: -175px; margin-top: 150px; ">DOWNLOAD HEADSHOT</a></li>
+						<li><a href="/resume/resume.pdf" download class="button icon solid fa-download" style="margin-left: 200px; margin-top: 150px;">DOWNLOAD RESUME</a></li>
+					</ul>
 				</section>
+
 
 			<!-- Contact Me -->
 				<section class="bannerpic" id="contact">
-					<img src="https://imagedelivery.net/BLeIp_8WYs9yHwxaCXjRYQ/7f4c6c76-2835-4a24-8e04-14f468d6ff00/fullscreen" alt="Banner Image">
+					<img src="https://imagedelivery.net/BLeIp_8WYs9yHwxaCXjRYQ/faebb620-77fd-4f2a-77f4-53a980998800/fullscreen" alt="Banner Image">
 					<div class="vertical-title-right">CONTACT ME</div>
 					<div class="translucent-square">
 						<!-- Content inside the translucent square goes here -->
