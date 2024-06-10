@@ -1,96 +1,180 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-    <title>Mia Gomez Montero</title>
-    <link rel="icon" type="image/x-icon" href="https://imagedelivery.net/BLeIp_8WYs9yHwxaCXjRYQ/2f10c5bd-bfc9-4056-85cc-d23573429c00/favicon">
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-    <style>
-        /* Additional CSS for smooth scroll */
-        html {
-            scroll-behavior: smooth;
-            overflow-y: scroll !important; /* Ensure vertical scroll bar always appears */
-        }
+		<!DOCTYPE HTML>
+		<html>
+		<head>
+			<title>Mia Gomez Montero</title>
+			<link rel="icon" type="image/x-icon" href="https://imagedelivery.net/BLeIp_8WYs9yHwxaCXjRYQ/2f10c5bd-bfc9-4056-85cc-d23573429c00/favicon">
+			<meta charset="utf-8" />
+			<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+			<link rel="stylesheet" href="assets/css/main.css" />
+			<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+			<style>
+				/* Additional CSS for smooth scroll */
+				html {
+					scroll-behavior: smooth;
+					overflow-y: scroll !important; /* Ensure vertical scroll bar always appears */
+				}
 
-        body {
-            overflow-y: scroll !important; /* Ensure vertical scroll bar always appears */
-        }
+				body {
+					overflow-y: scroll !important; /* Ensure vertical scroll bar always appears */
+				}
 
-        /* Styling for site title */
-		#site-title {
-			font-family: 'Fjalla One', sans-serif; /* Use Fjalla One font */
-			font-size: 80px;
-			color: white; /* Set the font color to white */
-			text-align: center; /* Center align the text */
-			position: absolute; /* Absolute positioning for proper alignment */
-			right: 10%; /* Position towards the right */
-			top: calc(50% - 1in); /* Vertically center and move up 2 inches */
-			left: 50%; /* Move 3 inches to the left */
-			transform: translateY(-50%); /* Vertically center */
-		}
+				/* Styling for site title */
+				#site-title {
+					font-family: 'Fjalla One', sans-serif; /* Use Fjalla One font */
+					font-size: 80px;
+					color: white; /* Set the font color to white */
+					text-align: center; /* Center align the text */
+					position: absolute; /* Absolute positioning for proper alignment */
+					right: 10%; /* Position towards the right */
+					top: calc(50% - 1in); /* Vertically center and move up 2 inches */
+					left: 50%; /* Move 3 inches to the left */
+					transform: translateY(-50%); /* Vertically center */
+				}
 
-        /* Styling for h2 subtitles */
-        h2 {
-            font-family: 'Fjalla One', sans-serif; /* Use Fjalla One font */
-            font-size: 50px; /* Set the font size to 36px (adjust as needed) */
-            color: #000000; /* Set a slightly lighter color (adjust as needed) */
-        }
+				/* Styling for h2 subtitles */
+				h2 {
+					font-family: 'Fjalla One', sans-serif; /* Use Fjalla One font */
+					font-size: 50px; /* Set the font size to 36px (adjust as needed) */
+					color: #000000; /* Set a slightly lighter color (adjust as needed) */
+				}
 
-        /* Parallax section */
-        .banner {
-            position: relative;
-            height: 100vh; /* Full viewport height */
-            background: url('https://imagedelivery.net/BLeIp_8WYs9yHwxaCXjRYQ/e4f96d2c-4464-4830-cfcc-48c616da1600/fullscreen') no-repeat center center fixed;
-            background-size: cover;
-        }
+				/* Parallax section */
+				.banner {
+					position: relative;
+					height: 100vh; /* Full viewport height */
+					background: url('https://imagedelivery.net/BLeIp_8WYs9yHwxaCXjRYQ/e4f96d2c-4464-4830-cfcc-48c616da1600/fullscreen') no-repeat center center fixed;
+					background-size: cover;
+				}
 
-        /* Content inside parallax section */
-        .banner .content {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: flex-end; /* Align content to the right */
-            align-items: center; /* Center content vertically */
-        }
+				/* Content inside parallax section */
+				.banner .content {
+					position: absolute;
+					width: 100%;
+					height: 100%;
+					display: flex;
+					justify-content: flex-end; /* Align content to the right */
+					align-items: center; /* Center content vertically */
+				}
 
-        /* Additional CSS to override conflicting scroll commands */
-        .nav {
-            overflow-y: hidden !important; /* Ensure no vertical scroll bar in the navigation */
-        }
-    </style>
-    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-</head>
-<body class="is-preload">
+				/* Additional CSS to override conflicting scroll commands */
+				.nav {
+					overflow-y: hidden !important; /* Ensure no vertical scroll bar in the navigation */
+				}
 
-    <!-- Header -->
-    <header class="header">
-        <nav class="nav">
-            <div class="logo">
-                MGM
-            </div>
-            <ul class="nav__links">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="#about-me">ABOUT ME</a></li>
-                <li><a href="#shows">SHOWS</a></li>
-                <li><a href="#resume">RESUME</a></li>
-                <li><a href="#media">MEDIA</a></li>
-                <li><a href="">CONTACT</a></li>
-            </ul>
-        </nav>
-        <!-- Instagram link -->
-        <div class="instagram-link">
-            <ul class="actions stacked">
-                <li><a href="https://www.instagram.com/miagomezmontero/" class="icon brands style1 fa-instagram" style="font-size: 1em;"><span class="label">Instagram</span></a></li>
-            </ul>
-        </div>
-    </header>
+				/* New white banner section */
+				.white-banner {
+					background-color: #e5e0df;
+					padding: 400px 0;
+					text-align: center;
+				}
 
-    <!-- Wrapper -->
-    <div id="wrapper" class="divided">
+				.white-banner h2 {
+					margin: 0;
+					font-family: 'Fjalla One', sans-serif; /* Use Fjalla One font */
+					font-size: 50px; /* Set the font size */
+					color: #000000; /* Set the font color */
+				}
+
+				/* Banner Picture */
+				.bannerpic {
+					position: relative;
+					height: 100vh; /* Full viewport height */
+					overflow: hidden; /* Hide overflow to prevent scrollbars */
+				}
+
+				/* Make sure the image covers the entire section */
+				.bannerpic img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover; /* Cover the entire section */
+					position: absolute;
+					top: 0;
+					left: 0;
+				}
+				/* Vertical Title */
+				.vertical-title {
+					position: absolute;
+					left: 200px;
+					top: 35%;
+					transform: rotate(-90deg) translateX(-50%);
+					transform-origin: left top;
+					font-family: 'Fjalla One', sans-serif;
+					font-size: 50px;
+					color: #ffffff;
+					white-space: nowrap;
+				}
+
+				.vertical-title-right {
+					position: absolute;
+					right: 200px;
+					top: 35%;
+					transform: rotate(90deg) translateX(50%);
+					transform-origin: right top;
+					font-family: 'Fjalla One', sans-serif;
+					font-size: 50px;
+					color: #ffffff;
+					white-space: nowrap;
+				}
+				/* Content inside bannerpic section */
+				.contentpic {
+					position: absolute;
+					top: 50%;
+					left: 150px; /* Adjust this value for desired padding from the left */
+					transform: translateY(-50%);
+					max-width: 45%;
+				}
+				/* Paragraphs */
+				.bannerpic p {
+					color: white; /* White text color */
+					font-family: 'Montserrat', sans-serif; /* Use Montserrat font */
+					font-size: 15px; /* Adjust font size as needed */
+					margin: 15px 0; /* Add some margin for spacing between paragraphs */
+					padding-left: 150px; /* Add padding to align with the vertical title */
+				}
+
+				/* Translucent Square */
+				.translucent-square {
+					position: relative;
+					width: 30%; /* Half the width of the banner */
+					height: 60%; /* Adjust the height of the square */
+					margin: 125px auto 0; /* Move the square down by 200px and center horizontally */
+					left: 200px;
+					background-color: rgba(255, 255, 255, 0.5); /* Translucent white background color */
+					border: 5px solid #ffffff; /* Black border around the square */
+					opacity: 0.8; /* Adjust the opacity of the square */
+				}
+
+			</style>
+			<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+		</head>
+		<body class="is-preload">
+
+			<!-- Header -->
+			<header class="header">
+				<nav class="nav">
+					<div class="logo">
+						MGM
+					</div>
+					<ul class="nav__links">
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="#about-me">ABOUT ME</a></li>
+						<li><a href="#shows">SHOWS</a></li>
+						<li><a href="#resume">RESUME</a></li>
+						<li><a href="#media">MEDIA</a></li>
+						<li><a href="#contact">CONTACT</a></li>
+					</ul>
+				</nav>
+				<!-- Instagram link -->
+				<div class="instagram-link">
+					<ul class="actions stacked">
+						<li><a href="https://www.instagram.com/miagomezmontero/" class="icon brands style1 fa-instagram" style="font-size: 1em;"><span class="label">Instagram</span></a></li>
+					</ul>
+				</div>
+			</header>
+
+			<!-- Wrapper -->
+			<div id="wrapper" class="divided">
 
 				<!-- One -->
 				<section class="banner">
@@ -99,41 +183,22 @@
 					</div>
 				</section>
 
-				<!-- Two -->
-				<section class="spotlight style1 content-align-left image-position-left orient-left" id="about-me">
-					<div class="content">
-						<h2>ALL ABOUT MIA</h2>
-						<p class="paragraph">Mia Gomez Montero is a New York City based theater maker, actor, singer, dancer, and bookworm! She is a proud Hispanic Jersey Girl, born and raised, and earned her Bachelor’s Degrees in English and Theatre from Penn State University.</p>
-						<p class="paragraph">Having grown up in New Jersey, Mia was bit by the theater bug at a young age and began her training at Paper Mill Playhouse and the New Jersey School of Ballet. Since then she has been seen regionally at venues like the Union County and MAYO Performing Arts Centers. In her time at Penn State she made her Centre Stage debut by swinging on for their production of Cabaret, despite having been the Assistant Director of the production. In addition to serving as the Assistant Director and Assistant Choreographer for 5 Centre Stage productions she later went on to play the role of Madeline in Ike Holter’s Hit the Wall. She could not be more proud to be a Nittany Lion. We Are!</p>
-						<p class="paragraph">Mia’s collegiate experience afforded her the opportunity to study at the Royal Academy of Dramatic Art in London under the instruction of world-renowned tutors like Geoff Colman, Marina Calderone, and Tamsin Collison. Her experience abroad connected her with the Voice Over industry under the expertise of Richard Cotton, thus leading to her UK representation with The Voice People and a new passion that she adores.</p>
-						<p class="paragraph">When Mia isn’t performing you can often find her curled up with a good book and a cup of tea, or simply spending time with the people she loves over some paella and sangria.</p>
-					</div>
-					<div class="image">
-						<img src="https://imagedelivery.net/BLeIp_8WYs9yHwxaCXjRYQ/c8245241-70ae-4e49-8f34-c8d5292b0f00/public" alt="">
+				<!-- New white banner -->
+				<section class="white-banner" id="shows">
+				</section>
+				
+				<!-- Banner pic -->
+				<section class="bannerpic" id="about-me">
+					<img src="https://imagedelivery.net/BLeIp_8WYs9yHwxaCXjRYQ/d1ebffee-4318-4aed-5872-6cadb2be3800/fullscreen" alt="Banner Image">
+					<div class="vertical-title">ALL ABOUT MIA</div>
+					<div class="contentpic">
+						<p>Mia Gomez Montero is a New York based theater maker, actor, singer, and dancer. A proud Jersey Girl, Mia earned her Bachelor's Degrees in English and Theatre from Penn State University.</p>
+						<p>In her youth, Mia gained experience in the arts, training at the Paper Mill Playhouse and New Jersey School of Ballet. Since then she has been seen regionally at venues like the Union County and MAYO Performing Arts Centers. In her time at Penn State she made her Centre Stage debut by swinging on for their production of Cabaret, despite having been the Assistant Director of the production. In addition to serving as the Assistant Director and Assistant Choreographer for 5 Centre Stage productions she later went on to play the role of Madeline in Ike Holter's Hit the Wall. She could not be more proud to be a Nittany Lion. We Are!</p>
+						<p>Mia's collegiate experience afforded her the opportunity to study at the Royal Academy of Dramatic Art in London under the instruction of world-renowned tutors like Geoff Colman, Marina Calderone, and Tamsin Collison. Her experience abroad connected her with the Voice Over industry under the expertise of Richard Cotton, thus leading to her UK representation with The Voice People and a new passion that she adores.</p>
+						<p>When Mia isn't performing you can often find her curled up with a good book and a cup of tea, or simply spending time with the people she loves over some paella and sangria.</p>
 					</div>
 				</section>
 
-				<!-- Three -->
-				<section class="spotlight style5 fullscreen - content-align-left image-position-center orient-right" id="shows">
-					<div class="content">
-						<h2>THE SKIN OF OUR TEETH</h2>
-						<p>Most recently, Mia was seen as Sabina in Thorton Wilder’s classic play, The Skin of Our Teeth, under the direction of her dear colleague and friend, Max Rodriguez. She feels incredibly lucky to have stepped into the shoes of this profound and complex character in a rigorous 7 day rehearsal process!</p>
-					</div>
-					<div class="image">
-						<img src="https://imagedelivery.net/BLeIp_8WYs9yHwxaCXjRYQ/bc27d882-8c0d-4961-22d0-a906c1956900/highqual" alt="" />
-					</div>
-				</section>
-
-				<!-- Three -->
-				<section class="spotlight style5 fullscreen - content-align-right image-position-center orient-left">
-					<div class="content">
-						<h2>HIT THE WALL</h2>
-						<p>Mia had the honor of portraying Madeline in Ike Holter’s Hit the Wall in a compelling and raw portrayal of the events at the Stonewall Inn on June 28th, 1969. Under the fearless direction of Robert Schneider, the team gave an honest telling of this difficult story and brought awareness to the birth of the LGBTQIA+ activism movement. </p>
-					</div>
-					<div class="image">
-						<img src="https://imagedelivery.net/BLeIp_8WYs9yHwxaCXjRYQ/357620d1-0e1c-4c06-15e8-48ad96885700/highqual" alt="" />
-					</div>
-				</section>
 
 				<!-- Five -->
 				<section class="wrapper style1 align-center" id="resume">
@@ -143,120 +208,27 @@
 							<!-- Your resume content goes here -->
 						</div>
 						<div class="image" style="text-align: center; margin-top: 20px;">
-							<img src="https://imagedelivery.net/BLeIp_8WYs9yHwxaCXjRYQ/8eb70381-3af3-453d-3390-7095d39b8400/public" alt="" style="max-width: 500px; border: 1px solid #000; border-radius: 3px;" />
+							<img src="https://imagedelivery.net/BLeIp_8WYs9yHwxaCXjRYQ/5626898f-4cc8-4a20-749d-29045e5ee000/public" alt="" style="max-width: 500px; border: 1px solid #000; border-radius: 3px;" />
 						</div>
 						<ul class="actions resume-actions">
-							<li><a href="/resume/Mia Gomez Montero_Resume.pdf" download class="button icon solid fa-download">DOWNLOAD RESUME</a></li>
+							<li><a href="/resume/re.pdf" download class="button icon solid fa-download">DOWNLOAD RESUME</a></li>
 							<li><a href="/images/headshot/headshot.jpg" download class="button icon solid fa-download">DOWNLOAD HEADSHOT</a></li>
 						</ul>
 					</div>
 				</section>
 
-				<!-- Six -->
-					<section class="wrapper style1 align-center" id="media">
-						<div class="inner">
-							<h2>MEDIA</h2>
-						</div>
-
-						<!-- Gallery -->
-							<div class="gallery style2 medium lightbox">
-								<article>
-									<a href="images/gallery/fulls/01.jpg" class="image">
-										<img src="https://imagedelivery.net/BLeIp_8WYs9yHwxaCXjRYQ/1c67ce6a-2dfb-484c-e7b6-cff20b0fc300/public" alt="" />
-									</a>
-									<div class="caption">
-										<h3>THE SKIN OF OUR TEETH</h3>
-										<p>As 'Sabina' (2023).</p>
-										<ul class="actions fixed">
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/02.jpg" class="image">
-										<img src="https://imagedelivery.net/BLeIp_8WYs9yHwxaCXjRYQ/3e0be963-64af-44ca-4392-04d574dffc00/public" alt="" />
-									</a>
-									<div class="caption">
-										<h3>THE SKIN OF OUR TEETH</h3>
-										<p>As 'Sabina' (2023).</p>
-										<ul class="actions fixed">
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/03.jpg" class="image">
-										<img src="https://imagedelivery.net/BLeIp_8WYs9yHwxaCXjRYQ/b1cca777-948d-4456-343d-f0ac41fad100/public" alt="" />
-									</a>
-									<div class="caption">
-										<h3>CINDERELLA</h3>
-										<p>As 'Ensemble' (2023).</p>
-										<ul class="actions fixed">
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/04.jpg" class="image">
-										<img src="https://imagedelivery.net/BLeIp_8WYs9yHwxaCXjRYQ/d0ef43cd-2cd7-4807-0176-d810ddcb0000/public" alt="" />
-									</a>
-									<div class="caption">
-										<h3>CINDERELLA</h3>
-										<p>As "Ensemble" (2023).</p>
-										<ul class="actions fixed">
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/05.jpg" class="image">
-										<img src="https://imagedelivery.net/BLeIp_8WYs9yHwxaCXjRYQ/1a5dee6a-ea8b-411a-1f72-a8d94030cc00/public" alt="" />
-									</a>
-									<div class="caption">
-										<h3>CINDERELLA</h3>
-										<p>As 'Ensemble' (2023).</p>
-										<ul class="actions fixed">
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/06.jpg" class="image">
-										<img src="https://imagedelivery.net/BLeIp_8WYs9yHwxaCXjRYQ/8baddbef-f231-4ade-4f10-4d2d50066e00/public" alt="" />
-									</a>
-									<div class="caption">
-										<h3>LES MISERABLES</h3>
-										<p>As 'Fantine' (2019).</p>
-										<ul class="actions fixed">
-										</ul>
-									</div>
-								</article>
-							</div>
-					</section>
-
-			<!-- Seven -->
-			<section class="wrapper style1 align-center" id="videos">
-				<div class="inner">
-					<h2>VIDEOS</h2>
-
-					<!-- First Video -->
-					<div class="video-container">
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/0DisXt8Rt_g" frameborder="0" allowfullscreen></iframe>
+			<!-- Contact Me -->
+				<section class="bannerpic" id="contact">
+					<img src="https://imagedelivery.net/BLeIp_8WYs9yHwxaCXjRYQ/7f4c6c76-2835-4a24-8e04-14f468d6ff00/fullscreen" alt="Banner Image">
+					<div class="vertical-title-right">CONTACT ME</div>
+					<div class="translucent-square">
+						<!-- Content inside the translucent square goes here -->
 					</div>
-					<p class="video-caption">2024 Vocal Reel</p>
+				</section>
 
-					<!-- Second Video -->
-					<div class="video-container">
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/yPNhviDTUNY" frameborder="0" allowfullscreen></iframe>
-					</div>
-					<p class="video-caption">2024 Dance Reel</p>
-				</div>
-			</section>
 
-			<!-- Your content before the footer -->
-				<div class="spacer"></div>
 
-			<!-- Footer -->
-				<footer class="wrapper style1 align-center">
-  		  			<div class="inner">
-        					<p>&copy; Mia Gomez Montero 2024. Website by: Jonathan Kelso</p>
-    					</div>
-				</footer>
+
 
 			<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
