@@ -174,20 +174,50 @@
 					padding-left: 150px; /* Add padding to align with the vertical title */
 				}
 
-				/* Translucent Square */
 				.translucent-square {
-					position: relative;
-					width: 57.5%; /* Half the width of the banner */
-					height:45%; /* Adjust the height of the square */
-					margin: -785px auto 0; /* Move the square down by 200px and center horizontally */
-					left: -5px;
-					background-color: #ece6e5a7; /* Translucent white background color */
-					border: .5px solid #ffffff; /* White border around the square */
-					opacity: 0.8; /* Adjust the opacity of the square */
-					padding: 20px; /* Add some padding inside the square */
-					box-sizing: border-box; /* Include padding in the element's total width and height */
-					text-align: center; /* Center text inside the square */
-				}
+    position: relative;
+    width: 57.5%; /* Half the width of the banner */
+    height: 45%; /* Adjust the height of the square */
+    margin: -785px auto 0; /* Move the square down by 200px and center horizontally */
+    left: -5px;
+    background-color: #ece6e5a7; /* Translucent white background color */
+    border: .5px solid #ffffff; /* White border around the square */
+    opacity: 0.8; /* Adjust the opacity of the square */
+    padding: 20px; /* Add some padding inside the square */
+    box-sizing: border-box; /* Include padding in the element's total width and height */
+    text-align: center; /* Center text inside the square */
+    display: flex;
+    justify-content: space-around; /* Space announcements side by side */
+}
+
+.announcement {
+    width: 45%; /* Set width for each announcement */
+}
+
+.announcement-header {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.announcement-header .square {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    margin-bottom: 5px; /* Space between the square and header */
+}
+
+.announcement p {
+    text-align: left; /* Align text to the left */
+}
+
+/* Smaller headings inside the translucent square */
+.translucent-square h2 {
+    font-size: 24px; /* Set smaller font size for headings */
+    color: #333; /* Set the font color */
+    margin: 10px 0; /* Adjust margins as needed */
+}
 
 				/* Smaller headings inside the translucent square */
 				.translucent-square h2 {
@@ -283,15 +313,20 @@
 					<div class="content2">
 						<div class="vertical-title-right-black">UPCOMING</div>
 						<div class="translucent-square">
-							<h2>Summer 2024</h2>
-							<ul>
-								<li>This July, Mia will be featured as 'Nina' in Plays in the Park's presentation of In the Heights.</li>
-							</ul>
-						
-							<h2>Fall 2024</h2>
-							<ul>
-								<li>Mia is excited to announce that she has been accepted to the Royal Central School of Acting in London, UK. She will be completing x program and will graduate in August of 2025.</li>
-							</ul>
+							<div class="announcement">
+								<div class="announcement-header">
+									<div class="square"></div>
+									<h2>Announcement 1</h2>
+								</div>
+								<p>Announcement content goes here. This is the content for the first announcement.</p>
+							</div>
+							<div class="announcement">
+								<div class="announcement-header">
+									<div class="square"></div>
+									<h2>Announcement 2</h2>
+								</div>
+								<p>Announcement content goes here. This is the content for the second announcement.</p>
+							</div>
 						</div>
 					</div>
 
@@ -324,16 +359,6 @@
 						<li><a href="/images/headshot/headshot.jpg" download class="button icon solid fa-download" style="margin-left: -175px; margin-top: 150px; ">DOWNLOAD HEADSHOT</a></li>
 						<li><a href="/resume/resume.pdf" download class="button icon solid fa-download" style="margin-left: 200px; margin-top: 150px;">DOWNLOAD RESUME</a></li>
 					</ul>
-				</section>
-
-
-			<!-- Contact Me -->
-				<section class="bannerpic" id="contact">
-					<img src="https://imagedelivery.net/BLeIp_8WYs9yHwxaCXjRYQ/faebb620-77fd-4f2a-77f4-53a980998800/fullscreen" alt="Banner Image">
-					<div class="vertical-title-right">CONTACT ME</div>
-					<div class="translucent-square">
-						<!-- Content inside the translucent square goes here -->
-					</div>
 				</section>
 
 
