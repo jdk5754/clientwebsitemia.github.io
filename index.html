@@ -68,6 +68,32 @@
 						/* Add any other styles such as margins, padding, etc. */
 					}
 
+				.blank-banner2 {
+					    background-color: #e5e0df; /* Set background color */
+						height: 100px;
+						padding: 215px 0; /* Set the height of the banner */
+						/* Add any other styles such as margins, padding, etc. */
+					}
+
+				/* Content inside blank banner section */
+				.blank-banner2 .content2 {
+					position: absolute;
+					width: 100%;
+					height: 100%;
+					display: flex;
+					justify-content: center; /* Center content horizontally */
+					align-items: center; /* Center content vertically */
+				}
+
+				/* Paragraphs */
+				.blankbanner2 p {
+					color: rgb(0, 0, 0); /* White text color */
+					font-family: 'Montserrat', sans-serif; /* Use Montserrat font */
+					font-size: 15px; /* Adjust font size as needed */
+					margin: 15px 0; /* Add some margin for spacing between paragraphs */
+					padding-left: 150px; /* Add padding to align with the vertical title */
+				}
+
 				/* Content inside blank banner section */
 				.blank-banner .content {
 					position: absolute;
@@ -123,7 +149,7 @@
 				.vertical-title-right-black {
 					position: absolute;
 					right: 200px;
-					top: -15%;
+					top: -5%;
 					transform: rotate(90deg) translateX(50%);
 					transform-origin: right top;
 					font-family: 'Fjalla One', sans-serif;
@@ -151,13 +177,44 @@
 				/* Translucent Square */
 				.translucent-square {
 					position: relative;
-					width: 30%; /* Half the width of the banner */
-					height: 60%; /* Adjust the height of the square */
-					margin: 125px auto 0; /* Move the square down by 200px and center horizontally */
-					left: 200px;
-					background-color: rgba(255, 255, 255, 0.5); /* Translucent white background color */
-					border: 5px solid #ffffff; /* Black border around the square */
+					width: 57.5%; /* Half the width of the banner */
+					height:45%; /* Adjust the height of the square */
+					margin: -785px auto 0; /* Move the square down by 200px and center horizontally */
+					left: -5px;
+					background-color: #ece6e5a7; /* Translucent white background color */
+					border: .5px solid #ffffff; /* White border around the square */
 					opacity: 0.8; /* Adjust the opacity of the square */
+					padding: 20px; /* Add some padding inside the square */
+					box-sizing: border-box; /* Include padding in the element's total width and height */
+					text-align: center; /* Center text inside the square */
+				}
+
+				/* Smaller headings inside the translucent square */
+				.translucent-square h2 {
+					font-size: 24px; /* Set smaller font size for headings */
+					color: #333; /* Set the font color */
+					margin: 10px 0; /* Adjust margins as needed */
+				}
+
+				/* Centered paragraphs with bullet points */
+				.translucent-square p {
+					font-family: 'Montserrat', sans-serif; /* Use Montserrat font */
+					font-size: 14px; /* Adjust font size as needed */
+					color: #000; /* Set the font color */
+					margin: 10px 0; /* Adjust margins as needed */
+					text-align: center; /* Center align text */
+					list-style-type: disc; /* Use disc bullet points */
+					list-style-position: inside; /* Position bullet points inside */
+				}
+
+				.translucent-square ul {
+					padding: 0; /* Remove padding */
+					list-style-type: none; /* Remove default bullet points */
+				}
+
+				.translucent-square ul li {
+					list-style-type: disc; /* Add custom bullet points */
+					margin-left: 20px; /* Indent bullet points */
 				}
 
 				.resume-image {
@@ -222,9 +279,20 @@
 				</section>
 
 				<!-- Two -->		 
-				<section class="blank-banner">
-					<div class="content">
+				<section class="blank-banner2">
+					<div class="content2">
 						<div class="vertical-title-right-black">UPCOMING</div>
+						<div class="translucent-square">
+							<h2>Summer 2024</h2>
+							<ul>
+								<li>This July, Mia will be featured as 'Nina' in Plays in the Park's presentation of In the Heights.</li>
+							</ul>
+						
+							<h2>Fall 2024</h2>
+							<ul>
+								<li>Mia is excited to announce that she has been accepted to the Royal Central School of Acting in London, UK. She will be completing x program and will graduate in August of 2025.</li>
+							</ul>
+						</div>
 					</div>
 
 				</section>
