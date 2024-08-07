@@ -70,8 +70,8 @@
 
 				.blank-banner2 {
 					    background-color: #e5e0df; /* Set background color */
-						height: 100px;
-						padding: 215px 0; /* Set the height of the banner */
+						height: 500px;
+						padding: 325px 0; /* Set the height of the banner */
 						/* Add any other styles such as margins, padding, etc. */
 					}
 
@@ -149,7 +149,7 @@
 				.vertical-title-right-black {
 					position: absolute;
 					right: 200px;
-					top: -5%;
+					top: -12%;
 					transform: rotate(90deg) translateX(50%);
 					transform-origin: right top;
 					font-family: 'Fjalla One', sans-serif;
@@ -175,49 +175,53 @@
 				}
 
 				.translucent-square {
-    position: relative;
-    width: 57.5%; /* Half the width of the banner */
-    height: 45%; /* Adjust the height of the square */
-    margin: -785px auto 0; /* Move the square down by 200px and center horizontally */
-    left: -5px;
-    background-color: #ece6e5a7; /* Translucent white background color */
-    border: .5px solid #ffffff; /* White border around the square */
-    opacity: 0.8; /* Adjust the opacity of the square */
-    padding: 20px; /* Add some padding inside the square */
-    box-sizing: border-box; /* Include padding in the element's total width and height */
-    text-align: center; /* Center text inside the square */
-    display: flex;
-    justify-content: space-around; /* Space announcements side by side */
-}
+					position: relative;
+					width: 57.5%; /* Half the width of the banner */
+					height: 65%; /* Adjust the height of the square */
+					margin: -785px auto 0; /* Move the square down by 200px and center horizontally */
+					left: -5px;
+					background-color: #ece6e5a7; /* Translucent white background color */
+					border: .5px solid #ffffff; /* White border around the square */
+					opacity: 0.8; /* Adjust the opacity of the square */
+					padding: 20px; /* Add some padding inside the square */
+					box-sizing: border-box; /* Include padding in the element's total width and height */
+					text-align: center; /* Center text inside the square */
+					display: flex;
+					justify-content: space-around; /* Space announcements side by side */
+				}
 
-.announcement {
-    width: 45%; /* Set width for each announcement */
-}
+				.announcement {
+					width: 45%; /* Set width for each announcement */
+				}
 
-.announcement-header {
-    display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: center;
-    margin-bottom: 10px;
-}
+				.announcement-header {
+					display: flex;
+					flex-direction: column; /* Stack items vertically */
+					align-items: center;
+					margin-bottom: 10px;
+				}
 
-.announcement-header .square {
-    width: 200px;
-    height: 200px;
-    background-color: white;
-    margin-bottom: 5px; /* Space between the square and header */
-}
+				.announcement-header .square {
+					width: 200px;
+					height: 200px;
+					background-color: white;
+					margin-bottom: 5px; /* Space between the square and header */
+					display: flex;
+    				align-items: center;
+    				justify-content: center;
+  				    overflow: hidden;
+				}
 
-.announcement p {
-    text-align: left; /* Align text to the left */
-}
+				.announcement p {
+					text-align: left; /* Align text to the left */
+				}
 
-/* Smaller headings inside the translucent square */
-.translucent-square h2 {
-    font-size: 24px; /* Set smaller font size for headings */
-    color: #333; /* Set the font color */
-    margin: 10px 0; /* Adjust margins as needed */
-}
+				/* Smaller headings inside the translucent square */
+				.translucent-square h2 {
+					font-size: 24px; /* Set smaller font size for headings */
+					color: #333; /* Set the font color */
+					margin: 10px 0; /* Adjust margins as needed */
+				}
 
 				/* Smaller headings inside the translucent square */
 				.translucent-square h2 {
@@ -283,11 +287,9 @@
 					</div>
 					<ul class="nav__links">
 						<li><a href="index.html">HOME</a></li>
+						<li><a href="#upcoming">UPCOMING</a></li>
 						<li><a href="#about-me">ABOUT ME</a></li>
-						<li><a href="#shows">SHOWS</a></li>
 						<li><a href="#resume">RESUME</a></li>
-						<li><a href="#media">MEDIA</a></li>
-						<li><a href="#contact">CONTACT</a></li>
 					</ul>
 				</nav>
 				<!-- Instagram link -->
@@ -309,23 +311,27 @@
 				</section>
 
 				<!-- Two -->		 
-				<section class="blank-banner2">
+				<section class="blank-banner2" id="upcoming">
 					<div class="content2">
 						<div class="vertical-title-right-black">UPCOMING</div>
 						<div class="translucent-square">
 							<div class="announcement">
 								<div class="announcement-header">
-									<div class="square"></div>
-									<h2>Announcement 1</h2>
+									<div class="square">
+										<img src="https://imagedelivery.net/BLeIp_8WYs9yHwxaCXjRYQ/4ac3fdb2-c5bd-42db-3fc5-a1b2fd90a800/2hun" alt="">
+									</div>
+									<h2>IN THE HEIGHTS</h2>
 								</div>
-								<p>Announcement content goes here. This is the content for the first announcement.</p>
+								<p>This summer, you can see Mia perform as Nina Rosario in Plays in the Park's production of IN THE HEIGHTS. The show runs from July 10th to July 20th at Roosevelt Park in Edison, NJ.</p>
 							</div>
 							<div class="announcement">
 								<div class="announcement-header">
-									<div class="square"></div>
-									<h2>Announcement 2</h2>
+									<div class="square">
+										<img src="https://imagedelivery.net/BLeIp_8WYs9yHwxaCXjRYQ/6693e43b-8a43-4b34-88af-305abbe2a000/2hun" alt="">
+									</div>
+									<h2>ROYAL CENTRAL</h2>
 								</div>
-								<p>Announcement content goes here. This is the content for the second announcement.</p>
+								<p>Mia is excited to announce that she will be attending the Royal Academcy of Dramatic Art in London this Fall, pursiuing an MFA. She could not be more excited to return to the UK and continue her dramatic studies. Mia will be local in the London area from September 2024 to August 2025. </p>
 							</div>
 						</div>
 					</div>
