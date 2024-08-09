@@ -46,6 +46,22 @@
 					background-size: cover;
 				}
 
+				/* Background for mobile devices */
+				@media (max-width: 768px) {
+  				  .banner {
+       				 background-image: url('https://imagedelivery.net/BLeIp_8WYs9yHwxaCXjRYQ/d1adbd9e-5ccc-46e4-c720-24fe7c710d00/mobile');
+       				 background-size: cover;
+       				 background-position: center;
+						background-size: 100% auto; /* Scale the width to 100% and adjust height automatically */
+        				background-position: center top; /* Position the image at the top center */
+       					background-repeat: no-repeat; /* Prevent the image from repeating */
+        				height: auto; /* Adjust the height automatically based on the image */
+        				min-height: 60vh; /* Ensure a minimum height */
+
+ 					   }
+					}
+
+
 				/* Content inside parallax section */
 				.banner .content {
 					position: absolute;
@@ -112,6 +128,21 @@
 					overflow: hidden; /* Hide overflow to prevent scrollbars */
 				}
 
+				/* Background for mobile devices */
+				@media (max-width: 768px) {
+  				  .bannerpic {
+       				 background-image: url('https://imagedelivery.net/BLeIp_8WYs9yHwxaCXjRYQ/d1adbd9e-5ccc-46e4-c720-24fe7c710d00/mobile');
+       				 background-size: cover;
+       				 background-position: center;
+						background-size: 100% auto; /* Scale the width to 100% and adjust height automatically */
+        				background-position: center top; /* Position the image at the top center */
+       					background-repeat: no-repeat; /* Prevent the image from repeating */
+        				height: auto; /* Adjust the height automatically based on the image */
+        				min-height: 60vh; /* Ensure a minimum height */
+
+ 					   }
+					}
+
 				/* Make sure the image covers the entire section */
 				.bannerpic img {
 					width: 100%;
@@ -165,6 +196,7 @@
 					transform: translateY(-50%);
 					max-width: 45%;
 				}
+
 				/* Paragraphs */
 				.bannerpic p {
 					color: white; /* White text color */
@@ -271,6 +303,37 @@
 				.headshot {
 					max-width: calc(100% - 20px); /* Adjust the width to fit within the container */
 
+				}
+
+								/* Responsive Font Size for Mobile */
+				@media screen and (max-width: 768px) {
+					#site-title {
+						font-size: 40px; /* Reduce the font size for smaller screens */
+						top: 10%; /* Adjust vertical position */
+						left: 50%;
+						right: auto; /* Remove the right positioning */
+						transform: translateX(-50%); /* Center horizontally */
+					}
+
+					/* Adjust banner background for mobile */
+					.banner {
+						background-position: center center;
+						background-size: cover;
+					}
+
+					.vertical-title,
+					.vertical-title-right,
+					.vertical-title-right-black {
+						font-size: 30px; /* Adjust vertical title font size */
+					}
+				}
+
+				/* Smaller screens (e.g., smartphones) */
+				@media screen and (max-width: 480px) {
+					#site-title {
+						font-size: 30px; /* Further reduce the font size for very small screens */
+						top: 15%; /* Adjust vertical position */
+					}
 				}
 
 			</style>
@@ -389,6 +452,15 @@
 					$(window).scroll(function () {
 						$('.banner').css('background-position-y', -$(this).scrollTop() / 2 + 'px');
 					});
+				});
+
+								$(document).ready(function () {
+					if ($(window).width() > 768) {
+						// Update background position on scroll only for non-mobile devices
+						$(window).scroll(function () {
+							$('.banner').css('background-position-y', -$(this).scrollTop() / 2 + 'px');
+						});
+					}
 				});
 			</script>
 	</body>
